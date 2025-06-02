@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+    margin: 0px; padding: 0px;/* 기본값으로 margin이나 padding을 갖고 있는 애들이 있어서 계산하기 귀찮으니까 다 빼고 시작*/
+    text-decoration:none; /*밑줄 제거*/
+    color: black;
+}
+
+li{
+    list-style-type: none; /*전체 ul에 글머리 제거*/
+}
+/*----공통적으로 이렇게 시작하는 경우가 많음----*/
+#header{
+    display: flex; /*하위 요소 배치 방법*/
+    justify-content: space-between; /*양쪽 끝 균등 배치*/
+    align-items: center;
+    width: 1280px;
+    margin: 50px auto;
+}
+.top-menu{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0px;
+    font-size: 12px;
+}
+.top-menu>li{
+    margin-left: 20px;
+}
+.main-menu{
+    display: flex;
+    justify-content: flex-end;
+    margin: 30px 0px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.main-menu>li{
+    margin-left: 70px;
+}
+/*대표 이미지*/
+#main-img>img{
+    width: 100%;
+    /*100%:디바이스 전체 크기*/
+}
+#main{
+    display: flex;
+    justify-content: space-between;
+    width: 1280px;
+    margin: 50px auto;
+}
+.sidebar{
+    width: 350px;
+}
+.sidebar>h3{
+    background-color: gray;
+    color: white;
+    font-size: 20px;
+    padding: 10px 5px;
+    margin-top: 20px;
+}
+.sidebar>ul>li{
+    border-bottom: 1px solid #eeeeee;
+    font-size: 15px;
+    padding: 10px 5px;
+}
+.contents>h3{
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-bottom: 1px solid #eeeeee;
+}
+.contents>p{
+    padding: 10px 30px;
+    font-size: 15px;
+}
+.img_dslr{
+    text-align: center;
+} /*display 기본값은 inline 이라서 margin이 안먹히는데 block으로 바꾸면 margin:0 auto 가능*/
+.contents>p{
+    font-size: 15px;
+}
+.contents>ul>li{
+    padding: 2px 30px;
+    font-size: 15px;
+}
+#footer{
+    background-color: rgb(37, 37, 37);
+}
+.footer_inner{
+    display: flex;
+    justify-content: space-between;
+    width: 1280px;
+    margin: 0 auto;
+    padding: 20px 0px;
+}
+#footer>ul>li{
+    color:white;
+}

@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: pink;
+}
+.main{
+    width: 350px;
+    margin: 20px auto;
+    text-align: center;
+}
+.title{
+    font-size: 20px;
+    border: 3px solid white;
+    width: 300px;
+    border-radius: 30px;
+    padding: 10px;
+    margin: 10px auto;
+}
+.image{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 20px 0px;
+}
+.text{
+    font-size: 15px;
+}
+.button_01{
+    color: white;
+    font-weight: bold;
+    background-color: skyblue;
+    width: 300px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    border:none
+}

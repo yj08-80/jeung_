@@ -1,0 +1,25 @@
+h1{
+    font-style: italic;
+    font-family: "궁서";
+}
+.처음문단{
+    font-size: 15px;
+    color: blue;
+    word-spacing: 10px;
+    letter-spacing: 5px;
+    font-family: "굴림";
+    font-weight: bold;
+}
+.두번째문단{
+    text-align: center;
+    text-decoration: line-through overline underline;
+    color: red;
+    text-shadow: 1px 1px 3px #a6a6a6;
+}
+.세번째문단{
+    text-align: center;
+    text-decoration: line-through overline underline;
+    font-weight: bold;
+    color: red;
+    text-shadow: 1px 1px 3px #a0a0a0;
+}

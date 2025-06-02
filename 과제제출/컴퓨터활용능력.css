@@ -1,0 +1,27 @@
+.img_01{
+    width: 230px;
+    height: 300px;
+}
+.title{
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+}
+.orange{
+    font-size: 25px;
+    color: orange;
+    font-weight: bold;
+}
+.text{
+    background-color: #0f6878;
+    color: white;
+    font-size: 15px;
+    width: 400px;
+    padding: 20px;
+    line-height: 20px;
+    word-spacing: 2px;
+}
+.orange_02{
+    color: orange;
+}

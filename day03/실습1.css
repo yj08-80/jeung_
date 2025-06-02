@@ -1,0 +1,29 @@
+h1{
+    font-family: "궁서";
+    line-height: 50px;
+    font-style: italic;
+} /*h1이 여러개 있을 경우 복잡하기 때문에 class 사용 권장*/
+.영광,.페이지{
+    font-family: "굴림";
+    color: blue;
+    word-spacing: 150;
+    letter-spacing: 10px;
+    font-weight: 1000;
+}
+.넬슨만델라,.빛나는하루{
+    font-size: 15px;
+    text-decoration: underline overline line-through;
+    color: red;
+    text-align: center;
+    line-height: 30px;
+    text-shadow: 3px 3px 8px gray;
+}
+.마음{
+    color: red;
+    font-size: 20px;
+    text-decoration: underline overline line-through;
+    font-weight: bold;
+    text-align: center;
+    line-height: 30px;
+    text-shadow: 3px 3px 8px gray;
+}

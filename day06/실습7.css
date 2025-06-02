@@ -1,0 +1,161 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+li{
+    list-style-type: none;
+}
+#header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; /*세로 정렬*/
+    width: 1280px; /*가로 사이즈*/
+    margin: 15px auto; /* 구역 가로 가운데 자동 정렬*/
+}
+.top-menu{
+    display: flex;
+    justify-content: flex-end;
+}
+.main-menu{
+    display: flex;
+    justify-content: flex-end;
+}
+.main-menu>li{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 0px 30px 100px;
+}
+#main-image>img{
+    width: 100%;
+}
+#main{
+    display: flex;
+    justify-content: space-between;
+    width: 1280px;
+    margin: 30px auto;
+}
+.sidebar{
+    width: 250px;
+}
+.content{
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+}
+.content > .leftbox{
+    width: 490px;
+}
+.content > .rightbox{
+    width: 490px;
+}
+.sidebar1 > h4{
+    background-color: rgb(21, 170, 170);
+    color: white;
+    font-size: 20px;
+    padding: 15px 5px;
+}
+.sidebar1 > p{
+    margin-top: 5px;
+    font-size: 17px;
+    line-height: 150%;
+    padding: 0px 5px;
+}
+.sidebar1> .searchbox{
+    padding:10px 0px;
+    margin-bottom: 20px;
+}
+.searchbox > .textbox{
+    width: 150px;
+    height: 35px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 3px;
+}
+.searchbox > .btn{
+    width: 45px;
+    height: 35px;
+}
+.sidebar1{
+    padding:0px 3px
+}
+.sidebar2{
+    height: 200px;
+    padding: 0px 5px;
+}
+.sidebar2 > h3{
+    padding: 10px 0px;
+    border-top: 2px solid black;
+    border-bottom: 1px solid #a1a1a1;
+    font-size: 20px;
+}
+.sidebar2 > ul > li{
+    font-size: 18px;
+    padding: 8px 0px;
+}
+.content > .leftbox > .sub-title{
+    border-bottom: 2px solid black;
+    padding: 10px 0px;
+    margin-bottom: 10px;
+}
+.board > li{
+    display: flex;
+    justify-content: space-between;
+    padding: 7px 0px;
+}
+.board{
+    margin-bottom: 50px;
+}
+.rightbox > h3{
+    font-size: 20px;
+    border-bottom: 2px solid black;
+    padding: 10px 0px;
+}
+.rightbox > ul{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.rightbox > ul > li{
+    padding: 10px 0px;
+    margin-bottom: 20px;
+    margin-right: 50px;
+}
+.rightbox > ul > li > .textbox{
+    font-size: 17px;
+    padding: 3px 0px;
+    margin-top: 5px;
+}
+#footer{
+    background-color: #05344e;
+}
+.footer-inner{
+    width: 1280px;
+    margin: 0 auto;
+}
+.ftop-menu{
+    display: flex;
+    justify-content: flex-start;
+    padding: 15px 0px;
+}
+.ftop-menu > li{
+    color: white;
+    font-size: 15px;
+    margin-right: 40px;
+}
+.fbottom-menu{
+    display: flex;
+    justify-content: space-between;
+}
+.fbottom-menu > ul{
+    color: white;
+    font-size: 15px;
+}
+.fbottom-menu > ul > li{
+    padding: 5px 0px;
+}
