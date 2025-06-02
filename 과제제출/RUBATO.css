@@ -18,7 +18,7 @@ a{
     margin-bottom: 20px;
 }
 .logo{
-    align-items: center;
+    margin: 15px 0px 0px 0px;
 }
 .top_menu > ul{
     display: flex;
