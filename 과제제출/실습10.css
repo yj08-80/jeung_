@@ -1,0 +1,123 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    width: 1280px;
+    margin: 100px auto;
+}
+.insta_logo{
+    width: 170px;
+    height: 120px;
+    margin-top: 10px;
+}
+#login{
+    width: 370px;
+    height:450px;
+    text-align: center;
+    border: 1px solid #cdcdcd;
+}
+.login2 > input{
+    border: 1px solid gray;
+    width: 300px;
+    height: 35px;
+    margin-bottom: 10px;
+    padding: 7px;
+}
+.purple{
+    background-color: #a791ff;
+    color: white;
+    font-weight: bold;
+    border-radius: 7px;
+    border: 0px;
+    font-size: 13px;
+}
+.line{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 370px;
+    margin-top: 10px;
+}
+.line::before,.line::after{
+    content: "";
+    width: 100px;
+    height: 1px;
+    background-color: #474747;
+    margin: 5px auto;
+}
+.line > span{
+    color: gray;
+    font-family: 13px;
+}
+.facebook{
+    width: 25px;
+    height: 25px;
+}
+.facebook_div{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    align-items: center;
+}
+.facebook_div > p{
+    font-size: 15px;
+    color: #1777f2;
+    font-weight: bold;
+    padding: 10px;
+}
+.passwordTxt > a{
+    color: #a791ff;
+    font-size: 15px;
+}
+#login3{
+    border: 1px solid #cdcdcd;
+    width: 370px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px;
+}
+#login3 > a{
+    color: #4051f6;
+    font-weight: bold;
+    padding: 5px;
+}
+#footer{
+    width: 1280px;
+    margin: 0 auto;
+}
+#footer  ul{
+    display: flex;
+    justify-content: center;
+}
+#footer li{
+    padding: 10px;
+    font-size: 13px;
+}
+#footer li > a{
+    color: #909090;
+}
+.end{
+    display: flex;
+    justify-content: center;
+    color: #909090;
+    font-size: 13px;
+    padding: 20px;
+}
+.언어{
+    color: #909090;
+    border: none;
+    margin-right: 10px;
+}

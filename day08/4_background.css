@@ -1,0 +1,47 @@
+/*1.background*/
+.box{
+    border: 1px solid red;
+    padding: 30px;
+}
+.box p{
+    background-color: white;
+    padding: 5px;
+    border: 1px solid white;
+    width: 200px;
+}
+.color1{
+    /* background-color: blue; */
+    /* background-color: rgb(0, 0, 255); */
+    /* background-color: #0000ff; */
+    background-color: rgba(0, 0, 255, 1);
+    /*rgba(0,0,0,0) a는 투명도 1이 100%*/
+}.img1{
+    background-image: url("../day08/슈가슈가룬.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.img2{
+    background-image: url("../day08/hand-drawn-doodle-pattern_23-2149590773.avif");
+    background-repeat: repeat;/*(기본값)만일 비어있는 공간이 있으면 채움*/
+}
+.img3{
+    background-image: url("../day08/icon.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: black;
+}
+.img4{
+    background-image: url("../day08/슈가슈가룬.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.box2{
+    width: 100px; height: 100px;
+    border: 2px solid red;
+    background-image: url("../day08/네이버아이콘.png");
+    background-repeat: no-repeat;
+    background-position: -50px -300px;
+}
