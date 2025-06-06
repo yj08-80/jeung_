@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.tk_menu{
+    display: flex;
+    justify-content: flex-start;
+    font-size: 15px;
+    background-color: #fbfbfb;
+    width: 1280px;
+    margin: 0 auto;
+}
+.tk_menu01, .tk_menu02{
+    display: flex;
+    justify-content: flex-start;
+}
+.tk_menu li{
+    margin: 20px 20px 20px 0px;
+}
+.tk_menu02 > li > a{
+    color: blue;
+}
+.tk_main_img01{
+    width: 100%;
+    position: relative;
+}
+.tk_main_img02{
+    display: flex;
+    justify-content: flex-start;
+    position: absolute;
+    top: 660px; left: 50px;
+}
