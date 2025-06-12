@@ -74,7 +74,7 @@ if(seatList[seatIndex] = "O"){
 let gameScore = Number(prompt("게임 점수를 입력하세요"));
 if( gameScore >= 900 ){
     console.log( "A급 경품");
-}else if(gameScore >=700 && gameScore < 900 ){
+}else if(gameScore >= 700 && gameScore < 900 ){  //gameScore < 900 이 부분은 앞에서 이미 가져갔기 때문에 또 쓸 필요가 없음
     console.log( "B급 경품" );
 }
 else{
@@ -89,9 +89,10 @@ else{
 // viewer: '콘텐츠 조회만 가능합니다.'
 // 그 외 역할: '정의되지 않은 역할입니다.'
 let role = prompt("역할을 입력해주세요");
-if( role = "admin" ){
+if( role == "admin" ){
     console.log("모든 기능에 접근할 수 있습니다.");
-}else if( role = "editor" ){
+}
+else if( role == "viewer" ){
     console.log("콘텐츠 조회만 가능합니다.");
 }else{
     console.log("정의되지 않은 역할입니다.");
@@ -102,7 +103,7 @@ if( role = "admin" ){
 // 8세 이상 19세 이하: '5,000원'
 // 20세 이상 65세 미만: '10,000원'
 // 65세 이상: '3,000원'
-let age = prompt("나이를 입력하세요");
+let age = Number(prompt("나이를 입력하세요"));
 if( age < 8 ){
     console.log("무료");
 }else if( age >= 8 && age <= 19 ){
@@ -119,11 +120,10 @@ if( age < 8 ){
 // 80점 이상 90점 미만: 'B등급'
 // 70점 이상 80점 미만: 'C등급'
 // 70점 미만: '재시험'
-let score1 = prompt("점수를 입력하세요");
+let score1 = Number(prompt("점수를 입력하세요"));
 if( score1 >= 90 ){
     console.log("A등급")
-}
-else if( score1 >= 80 && score1 < 90 ){
+}else if( score1 >= 80 && score1 < 90 ){
     console.log("B등급");
 }else if( score1 >= 70 && score1 < 80 ){
     console.log("C등급");
