@@ -5,36 +5,36 @@
 // (3) 조건 : 만약에 총점이 90점 이상이면
 // (4) 참 : '성공' 출력한다
 // (5) 거짓 : '거짓' 출력한다
-// let point1 = Number( prompt("점수1 :"));
-// let point2 = Number( prompt("점수2 :"));
-// let sum = point1 + point2;
-// let result1 = sum >= 90 ? "성공" : "거짓";
-// console.log(result1);
-// if( sum >= 90 ){
-//     console.log("성공");
-// }else{
-//     console.log("실패");
-// }
+let point1 = Number( prompt("점수1 :"));
+let point2 = Number( prompt("점수2 :"));
+let sum = point1 + point2;
+let result1 = sum >= 90 ? "성공" : "거짓";
+console.log(result1);
+if( sum >= 90 ){
+    console.log("성공");
+}else{
+    console.log("실패");
+}
 
 // 문제 2: 두 수 중 더 큰 수 찾기
 // 서로 다른 두 개의 정수를 입력받아, 더 큰 수를 출력하는 프로그램을 작성하시오.
-// let int1 = parseInt(prompt("정수를 입력해주세요1"));
-// let int2 = parseInt(prompt("앞서 입력한 정수 외에 다른 정수를 입력해주세요2"));
-// if(int1 > int2){
-//     console.log(int1);
-// }else{
-//     console.log(int2);
-// }
+let int1 = parseInt(prompt("정수를 입력해주세요1"));
+let int2 = parseInt(prompt("앞서 입력한 정수 외에 다른 정수를 입력해주세요2"));
+if(int1 > int2){
+    console.log(int1);
+}else{
+    console.log(int2);
+}
 
 // 문제 3: 로그인 시스템
 // 사용자로부터 아이디와 비밀번호를 입력받습니다. 아이디가 'admin'이고 비밀번호가 '1234'와 모두 일치하면 '로그인 성공'을, 하나라도 다르다면 '로그인 실패'를 출력하는 프로그램을 작성하시오.
-// let id = prompt("아이디를 입력해주세요");
-// let password = Number(prompt("비밀번호를 입력해주세요"));
-// if(id == "admin" && password == 1234){
-//     console.log("로그인 성공");
-// }else{
-//     console.log("로그인 실패");
-// }
+let id = prompt("아이디를 입력해주세요");
+let password = Number(prompt("비밀번호를 입력해주세요"));
+if(id == "admin" && password == 1234){
+    console.log("로그인 성공");
+}else{
+    console.log("로그인 실패");
+}
 
 // 문제 4: 비밀번호 보안 등급 확인
 // 사용자로부터 비밀번호를 문자열로 입력받아, 길이에 따라 보안 등급을 출력하는 프로그램을 작성하시오.
@@ -42,27 +42,27 @@
 // 8자 미만: '보안 등급: 약함 (8자 이상으로 설정해주세요.)'
 // 8자 이상 12자 미만: '보안 등급: 보통'
 // 12자 이상: '보안 등급: 강함'
-// let password1 = prompt("비밀번호를 입력하세요");
-// let pwdlength = password1.length;
-// if( pwdlength < 8){
-//     console.log("'보안 등급: 약함 (8자 이상으로 설정해주세요.)'");
-// }else if(pwdlength >=8 && pwdlength < 12){
-//     console.log("'보안 등급: 보통'");
-// }else{
-//     console.log("'보안 등급: 강함'")
-// }
+let password1 = prompt("비밀번호를 입력하세요");
+let pwdlength = password1.length;
+if( pwdlength < 8){
+    console.log("'보안 등급: 약함 (8자 이상으로 설정해주세요.)'");
+}else if(pwdlength >=8 && pwdlength < 12){
+    console.log("'보안 등급: 보통'");
+}else{
+    console.log("'보안 등급: 강함'")
+}
 
 // 문제 5: 좌석 예약 시스템
 // 3개 좌석의 예약 상태를 나타내는 배열이 있습니다. ('O': 예약 완료, 'X': 예약 가능)
 // let seatList = [ 'O', 'X', 'O' ];
 // 사용자로부터 예약할 좌석의 인덱스 번호(0, 1, 2)를 입력받아, 해당 좌석이 예약 가능('X')하면 '예약 성공'을, 이미 예약된 좌석('O')이면 '예약 불가'를 출력하는 프로그램을 작성하시오.
-// let seatList = [ "O", "X", "O"]
-// let seatIndex = Number(prompt("예약할 좌석의 인덱스 번호를 입력해주세요"));
-// if(seatList[seatIndex] = "X"){
-//     console.log("예약 실패");
-// }else{
-//     console.log("예약 성공");
-// }
+let seatList = [ "O", "X", "O"]
+let seatIndex = Number(prompt("예약할 좌석의 인덱스 번호를 입력해주세요"));
+if(seatList[seatIndex] = "X"){
+    console.log("예약 실패");
+}else{
+    console.log("예약 성공");
+}
 
 
 // 문제 6: 점수에 따른 상품 지급
@@ -71,15 +71,15 @@
 // 700점 이상 900점 미만: 'B급 경품'
 // 500점 이상 700점 미만: 'C급 경품'
 // 500점 미만: '참가상'
-// let gameScore = Number(prompt("게임 점수를 입력하세요"));
-// if( gameScore >= 900 ){
-//     console.log( "A급 경품");
-// }else if(gameScore >=700 && gameScore < 900 ){
-//     console.log( "B급 경품" );
-// }
-// else{
-//     console.log( "참가상" );
-// }
+let gameScore = Number(prompt("게임 점수를 입력하세요"));
+if( gameScore >= 900 ){
+    console.log( "A급 경품");
+}else if(gameScore >=700 && gameScore < 900 ){
+    console.log( "B급 경품" );
+}
+else{
+    console.log( "참가상" );
+}
 
 
 // 문제 7: 사용자 역할에 따른 접근 권한 부여
@@ -88,14 +88,14 @@
 // editor: '콘텐츠 수정 및 생성 기능에 접근할 수 있습니다.'
 // viewer: '콘텐츠 조회만 가능합니다.'
 // 그 외 역할: '정의되지 않은 역할입니다.'
-// let role = prompt("역할을 입력해주세요");
-// if( role = "admin" ){
-//     console.log("모든 기능에 접근할 수 있습니다.");
-// }else if( role = "editor" ){
-//     console.log("콘텐츠 조회만 가능합니다.");
-// }else{
-//     console.log("정의되지 않은 역할입니다.");
-// }
+let role = prompt("역할을 입력해주세요");
+if( role = "admin" ){
+    console.log("모든 기능에 접근할 수 있습니다.");
+}else if( role = "editor" ){
+    console.log("콘텐츠 조회만 가능합니다.");
+}else{
+    console.log("정의되지 않은 역할입니다.");
+}
 // 문제 8: 나이에 따른 놀이공원 입장료 계산
 // 사용자의 나이를 정수로 입력받아, 아래 기준에 따라 입장료를 출력하는 프로그램을 작성하시오.
 // 8세 미만: '무료'
