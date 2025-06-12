@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이미지및동영상</title>
+</head>
+<body>
+    <img src="./사진.png"/>
+    <img src="../day03/사진.png"/>
+    <img src="../사진.png" alt="">
+    <!--서버 절대경로는 로컬 절대경로의 사진을 띄울 수 없음
+        :로컬에 접근할 수 있는 권한이 없기 때문-->
+
+        <audio src="오디오예제파일.mp3" controls="controls" muted="muted"></audio>
+        <!--브라우저 정책상 자동 실행 안됨. 자동 실행이 되게 되면 자동으로 조회수 올려 수익 창출이 가능하기 때-->
+        <video src="비디오.mp4" controls="controls" autoplay="autoplay" muted="muted"></video>
+        <!--음소거 상태에서는 비디오 자동 재생 가능
+        controls 실행장치 삽입 muted 소리 autoplay 자동재생
+        멀티미디어 : (퍼가기)-->
+        <iframe width="560" height="315" src="https~~~" title="YouTube video player" frameborder="0" allow="accelerometer"></iframe>
+        <!--지도:(퍼가기)-->
+        <iframe src="http~~~" width="400" height="300"></iframe>
+</body>
+</html>

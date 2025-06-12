@@ -1,0 +1,20 @@
+.한줄{
+    padding: 20px 100px 20px 0px;
+}
+.오렌지강조{
+    display: inline;
+    font-size: 30px;
+    color: orange;
+}
+.한줄2{
+    display: inline;
+    font-size: 20px;
+}
+.내용강조{
+    padding: 20px 100px 20px 10px;
+    background-color: rgb(15, 143, 113);
+}
+.내용강조2{
+    display: inline;
+    color: orange;
+}

@@ -1,0 +1,44 @@
+*{
+    border: 1px solid red;
+}
+.s1{ /*span 기본값*/
+    display: inline; /*한 줄에 해당구역 포함 , <span>, <a>*/
+    /*inline으로는 구역 사이즈를 적용할 수 없다*/
+    /* width: 100px; height: 100px; */
+    /* inline을 쓰면 여백이 왼쪽 오른쪽에만 들어감 */
+    margin: 20px; /*바깥쪽 여백*/
+    padding: 20px; /*안쪽 여백*/
+}
+.s2{
+    display: block; /*한 줄 차지 구역 , <div>, <h>, <p>, <ul>,<li>*/
+    /* block에는 구역 사이즈 적용 가능 */
+    width: 100px; height: 100px;
+    margin: 20px;
+    padding: 20px;
+}
+.s3{
+    display: inline-block; /*한 줄에 해당 구역 포함하면서 , <input> */
+    width: 100px; height: 100px;
+    margin: 20px;
+    padding: 20px;
+}
+.s4{
+    display: none; /*표시 안함*/
+
+}
+.flexbox1{
+    display: flex; /*하의 요소들의 배치 방법*/
+}
+
+/*1.FLEX 2.FLOAT*/
+
+.box{
+    box-sizing: content-box; /*구역 크기를 컨텐츠 기준*/
+    width: 500px; /*안쪽 여백 빼고 500px*/
+    padding: 10px; /*안쪽 여백을 추가 후 구역 전체 크기: 520px */
+}
+.box{
+    box-sizing: border-box; /*구역 크기를 컨텐츠 안쪽여백 기준*/
+    width: 500px; /*안쪽 여백 포함 500px*/
+    padding: 10px;
+}
