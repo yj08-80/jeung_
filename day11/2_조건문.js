@@ -57,8 +57,8 @@ if( pwdlength < 8){
 // let seatList = [ 'O', 'X', 'O' ];
 // 사용자로부터 예약할 좌석의 인덱스 번호(0, 1, 2)를 입력받아, 해당 좌석이 예약 가능('X')하면 '예약 성공'을, 이미 예약된 좌석('O')이면 '예약 불가'를 출력하는 프로그램을 작성하시오.
 let seatList = [ "O", "X", "O"]
-let seatIndex = Number(prompt("예약할 좌석의 인덱스 번호를 입력해주세요"));
-if(seatList[seatIndex] = "X"){
+let seatIndex = prompt("예약할 좌석의 인덱스 번호를 입력해주세요");
+if(seatList[seatIndex] = "O"){
     console.log("예약 실패");
 }else{
     console.log("예약 성공");
