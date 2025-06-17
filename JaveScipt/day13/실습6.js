@@ -69,7 +69,7 @@ let scores = [92, 86, 72];
 let output = "";
 for( let index = 0 ; index <= nameArray.length-1 ; index++ ){
     let name = nameArray[index];
-    output += `<div> ${name} `; //HTML 문자열 이름 추가
+    output += `<div> ${name} `; //HTML 문자열 이름 추가  output = output + 'div ${name}'
     let score = scores[index];
     let black = parseInt( score / 10 );
     for ( let circle = 1 ; circle <= 10 ; circle++ ){

@@ -385,11 +385,11 @@ for( let index = 0 ; index <= data.length-1 ; index++ ){
   html += `<tr>
             <td>${obj.동별}</td><td>${obj.세대수}</td><td>${obj["인구수(계)"]}</td><td>${obj["인구수(남)"]}</td><td>${obj["인구수(여)"]}</td>
           </tr>`
-  console.log( obj.동별 );
-  console.log( obj.세대수 );
-  console.log( obj["인구수(계)"] );
-  console.log( obj["인구수(남)"] );
-  console.log( obj["인구수(여)"] );
+  // console.log( obj.동별 );
+  // console.log( obj.세대수 );
+  // console.log( obj["인구수(계)"] );
+  // console.log( obj["인구수(남)"] );
+  // console.log( obj["인구수(여)"] );
 }
 html +=`</table>`
 document.write( html );
