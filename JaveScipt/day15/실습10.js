@@ -33,6 +33,7 @@ const 수강신청내역테이블 = [{수강신청내역코드 :1, 성적:'A+', 
                 
 for( let i = 0 ; i <= 학생테이블.length-1 ; i++ ){
     let 학생 = 학생테이블[i];
+    document.write(`<hr/>`);
     document.write(`<h3>${학생.이름}(${학생.전공})</h3>`);
     for( let j = 0 ; j <= 수강신청내역테이블.length-1 ; j++ ){
         let 수강신청내역 = 수강신청내역테이블[j];
