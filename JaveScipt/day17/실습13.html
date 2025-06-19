@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>연락처 등록 영역</h1>
+        <input id="nameBtn" type="text" placeholder="예:홍길동"><br/>
+        <input id="telBtn" type="tel" placeholder="예:010-1234-5678"><br/>
+        <input id="textBtn" type="text" placeholder="예:OO회사 부장"><br/>
+        <button onclick="연락처등록함수()">등록 버튼</button>
+    </div>
+    <div>
+        <h1>연락처 목록 영역</h1>
+        <table border="1px" style="border-collapse: collapse;">
+            <thead>
+                <tr>
+                    <th>이름</th>
+                    <th>전화번호</th>
+                    <th>메모</th>
+                </tr>
+            </thead>
+            <tbody id="contentBody">
+                <tr>
+                    <td>변우석</td>
+                    <td>010-0000-1111</td>
+                    <td>배우</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+    <script src="실습13.js"></script>
+</body>
+</html>
