@@ -289,4 +289,23 @@
     - 함수는 명령어/코드 저장 : function 함수명(){ 로직 }
     
 
-        
+[ DOM 객체 ] : document(HTML), object(객체), model(표준)
+    1.정의 : 문서객체표준, HTML 마크업들을 객체처럼 다루기 *객체는 속성(property)과 함수(Function) 포함
+    2.내장객체 : document 
+    3.주요 속성과 함수
+        (1) document.querySelector("선택자");      : HTML 마크업 객체 반환 함수, 반환값 : 객체 1개
+        (2) document.querySelecotr("선택자");      : HTML 마크업 객체 반환 함수, 반환값 : 배열 1개
+            *선택자(CSS동일) :  1.마크업명 2.클래스명 3.아이디명
+        (3) (마크업객체).innerHTML                  : <마크업> !!여기!! </마크업> 에 HTML문자열 대입 
+            -> document.querySelecotr("선택자").innerHTML   : <마크업 value = "!!여기!!"/> dp 자료 대입/호출
+        (4) (마크업객체).value
+        (5) (마크업객체).style                      : <마크업 style = "!!여기!!" />에 CSS 문법 대입/호출
+        (6) (마크업객체).classList  
+            (마크업객체).classList.add("클래스명")    : 지정마크업에 클래스 추가
+            (마크업객체).classList.remove("클래스명") : 지정마크업에 클래스 삭제 
+            (마크업객체).classList.toggle("클래스명") : 지정마크업에 클래스 추가 혹은 (존재하면)삭제
+            (마크업객체).classList.contains("클래스명") : 지정 마크업에 클래스 존재 여부 true/false 반환
+        (7) (마크업객체).src                        : <마크업 src = "!!여기!!"/>에 파일 경로 대입/호출
+        (8) (마크업객체).remove()                   : HTML에서 해당 마크업 지우기
+
+        -> 소괄호가 있는 애들은 함수, 소괄호가 없으면 자료

@@ -113,18 +113,15 @@ const products = [
   { name: '모니터', price: 350000, stock: 12 },
   { name: '키보드', price: 80000, stock: 25 }
 ];
-function renderProducts(productList){
-    let doc = "";
-    for( let i = 0 ; i <= productList.length-1 ; i++ ){
-        let product = productList[i];
-        for( let j = 0 ; j <= product.length-1 ; j++ ){
-            let prod = product[j];
-            doc = document.write(`<div><h4>${name}}</h4>,<p>${price}</p>,<p>${stock}</p></div>`)
-        }
-    }
-    return doc;
+function renderProducts(){
+    let html = "";
+    for( i = 0 ; i <= products.length-1 ; i++ ){
+        let product = products[i];
+        html += `<div> <h4>name : ${product.name}</h4>, price : ${product.price}, stock : ${product.stock}</div>`
+    }document.write( html );
 }
-let result5 = renderProducts( products );
+renderProducts();
+
 
 
 // 실습 7: 간단한 계산기
