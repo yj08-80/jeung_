@@ -46,7 +46,7 @@ function addWaiting(){
 
 
     let number = 1;
-    let list = sessionStorage.getItem( "list" );
+    let list = localStorage.getItem( "list" );
     if( list == null ){
         list = [];
     }else{
@@ -57,7 +57,7 @@ function addWaiting(){
     console.log( list );
 
     //값 세션에 저장
-    sessionStorage.setItem( "list", JSON.stringify( list ));
+    localStorage.setItem( "list", JSON.stringify( list ));
 }
 
 //------대기 확인 영역-----//
@@ -71,7 +71,7 @@ function checkStatus(){
     console.log( "checkStatus exe" );
     let tel = document.querySelector( "#telInput2" ).value;
     console.log( tel );
-    let list = JSON.parse( sessionStorage.getItem( "list" ) );
+    let list = JSON.parse( localStorage.getItem( "list" ) );
     for( let i = 0 ; i <= list.length-1 ; i++ ){
         let list1 = list[ i ];
         console.log( list1 );
@@ -79,7 +79,8 @@ function checkStatus(){
             alert(`고객님의 대기번호는 ${list1.number}번입니다.`);
             break;
         }
-    }if(list1.tel != tel ){
+        if(list1.tel != tel ){
         alert("대기 정보가 없습니다.")
+    }
     }
 }
