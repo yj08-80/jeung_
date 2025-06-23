@@ -31,9 +31,55 @@
 //     -일치하는 정보가 있으면, alert를 통해 해당 손님의 "대기번호"를 보여줍니다. (예: "고객님의 대기번호는 O번 입니다.")
 //     -일치하는 정보가 없으면, alert로 "대기 정보가 없습니다."를 알려줍니다.
 
+//------대기 등록 영역------//
 function addWaiting(){
+    //실행 확인
+    console.log( "addWaiting exe")
+
+    //input 값
     let name = document.querySelector( "#nameInput" ).value;
+    console.log( name );
     let tel = document.querySelector( "#telInput" ).value;
+    console.log( tel );
     let num = document.querySelector( "#numInput" ).value;
-    
+    console.log( num );
+
+
+    let number = 1;
+    let list = sessionStorage.getItem( "list" );
+    if( list == null ){
+        list = [];
+    }else{
+        list = JSON.parse( list );
+        number = list[ list.length-1 ].number+1;
+    }
+    list.push( { number : number , name : name , tel : tel , num : num } );
+    console.log( list );
+
+    //값 세션에 저장
+    sessionStorage.setItem( "list", JSON.stringify( list ));
+}
+
+//------대기 확인 영역-----//
+//checkStatus() 구현 (대기 확인):
+//     -"대기 확인" 버튼 클릭 시 실행됩니다.
+//     -입력된 전화번호를 받아, localStorage에 저장된 waitingList 배열에서 전화번호가 일치하는 객체를 찾습니다.
+//     -일치하는 정보가 있으면, alert를 통해 해당 손님의 "대기번호"를 보여줍니다. (예: "고객님의 대기번호는 O번 입니다.")
+//     -일치하는 정보가 없으면, alert로 "대기 정보가 없습니다."를 알려줍니다.
+
+function checkStatus(){
+    console.log( "checkStatus exe" );
+    let tel = document.querySelector( "#telInput2" ).value;
+    console.log( tel );
+    let list = JSON.parse( sessionStorage.getItem( "list" ) );
+    for( let i = 0 ; i <= list.length-1 ; i++ ){
+        let list1 = list[ i ];
+        console.log( list1 );
+        if( list1.tel == tel ){
+            alert(`고객님의 대기번호는 ${list1.number}번입니다.`);
+            break;
+        }
+    }if(list1.tel != tel ){
+        alert("대기 정보가 없습니다.")
+    }
 }
