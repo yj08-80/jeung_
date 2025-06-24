@@ -78,14 +78,13 @@ function viewAllProduct(){
     console.log( html );
 }
 viewAllProduct();
-
 function DeleteProduct(pcode){ console.log('---exe----')
-    for(i=0; i<=productList; i++){
+    for(i=0; i<=productList.length-1 ; i++){
         let product=productList[i]; console.log(product);
-        if(productList.pcode==pcode){
+        if(product.pcode==pcode){
             productList.splice(i,1);
             alert("제품 삭제 완료");
-            ViewAllProducts();
+            viewAllProduct();
             return;
         }
     }

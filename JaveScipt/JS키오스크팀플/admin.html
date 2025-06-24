@@ -45,9 +45,46 @@
                 </tr>
             </tbody>
         </table>
-
-        <script src=""></script>
-        <script src="전체제품조회.js"></script>
     </div>
+    <!-- '재고 로그 관리' 기능을 위한 기본 HTML 구조를 구현합니다. CSS 스타일링은 이 단계에서 제외됩니다.
+
+재고 로그 입고 폼: 제품ID, 변동 유형(입고/출고) , 변동 수량, 입출사유 를 입력할 수 있는 <select> , <input>, <textarea>, <button> 태그 포함.
+재고 로그 목록 테이블: 재고 로그 정보를 표시할 <table> 태그와 <thead>, <tbody>
+버튼: '입출등록' ,  '입출사유변경' 버튼 포함 -->
+
+    <div>
+        제품 ID : <input type="text">
+        변동 유형 :
+        <select id="">
+            <option value="1">입고</option>
+            <option value="2">출고</option>
+        </select>
+        변동 수량 : <input type="number">
+        입출 사유 :  <textarea id=""></textarea>
+        <button>입출등록</button>
+        
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>제품ID</th>
+                <th>변동 유형</th>
+                <th>변동 수량</th>
+                <th>입출 사유</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>10</td>
+                <td>기타</td>
+                <td>기타</td>
+                <td>기타</td>
+                <td><button>입출사유변경</button></td>
+                
+            </tr>
+        </tbody>
+    </table>
+    <script src=""></script>
+        <script src="전체제품조회.js"></script>
 </body>
 </html>
