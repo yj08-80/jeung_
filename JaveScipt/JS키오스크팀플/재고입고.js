@@ -65,11 +65,11 @@ function ViewAllInventoryLogs(){ //console.log('----productcontent---')
         let productA=productArray[i];
         html+=  `<tr>
                     <td>${productA.id}</td>
-                    <td>${productA.cname}.cno}</td>
+                    <td>${productA.cname}</td>
                     <td>${productA.number}</td>
                     <td>${productA.etc.toLocaleString()}</td>
-                    <td>${productA.date}</td>
-                    <td><button onclick="ModifyInventoryHistory(${productA.no})" class="btnEdit">삭제</button></td>
+                    <td>${productA.변동날짜}</td>
+                    <td><button onclick="modifyReason()"(${productA.no})" class="btnEdit">입출사유변경</button></td>
                  </tr>`
     }                                                                       
    
@@ -80,13 +80,13 @@ function ViewAllInventoryLogs(){ //console.log('----productcontent---')
 
 // 입출사유 수정 함수
 
-function modifyReason( no ){ console.log( '>>modifyReason exe'); console.log( no ) ;
+function modifyReason(){ console.log( '>>modifyReason exe'); console.log( no ) ;
     for( let i=0; i<=productArray.length-1; i++){
         if( productArray[i].no == no ){
             const reason = prompt('수정 할 입출사유: '); // 수정할 값 입력
-            productArray[i].no = reason;                // 입력값으로 수정
+            productArray[i].etc = reason;                // 입력값으로 수정
             alert('[성공] 입출사유 수정'); 
-               // <--새로고침
+            ViewAllInventoryLogs();// <--새로고침
             return;
         } // if end
        } // for end
