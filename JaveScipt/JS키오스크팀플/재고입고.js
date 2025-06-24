@@ -8,7 +8,7 @@ let no = 3;
 // 재고 입고 (Inventory Inflow / Stock In)
 // 기능: 특정 제품의 재고를 증가시키기 위한 입고 내역 기록.
 // 입력 필드: 재고ID(자동), 제품 ID, 변동 유형 ('입고/출고') , 변동 수량, 입출사유 ,  변동날짜(오늘날짜 자동).
-// 동작:  성공/실패 메시지
+// 동작:  성공/실패 메시지 출력
 function stockIn(){
     console.log( "stockIn exe" )
     let idInput = document.querySelector("#idInput").value;
