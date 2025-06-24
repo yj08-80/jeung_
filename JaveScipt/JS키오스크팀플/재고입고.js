@@ -69,7 +69,7 @@ function ViewAllInventoryLogs(){ //console.log('----productcontent---')
                     <td>${productA.number}</td>
                     <td>${productA.etc.toLocaleString()}</td>
                     <td>${productA.변동날짜}</td>
-                    <td><button onclick="modifyReason()"(${productA.no})" class="btnEdit">입출사유변경</button></td>
+                    <td><button onclick="modifyReason(${productA.no})" class="btnEdit">입출사유변경</button></td>
                  </tr>`
     }                                                                       
    
@@ -80,7 +80,7 @@ function ViewAllInventoryLogs(){ //console.log('----productcontent---')
 
 // 입출사유 수정 함수
 
-function modifyReason(){ console.log( '>>modifyReason exe'); console.log( no ) ;
+function modifyReason( no ){ console.log( '>>modifyReason exe'); console.log( no ) ;
     for( let i=0; i<=productArray.length-1; i++){
         if( productArray[i].no == no ){
             const reason = prompt('수정 할 입출사유: '); // 수정할 값 입력
