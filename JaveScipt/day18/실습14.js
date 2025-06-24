@@ -54,8 +54,8 @@ console.log( categoryList );
 console.log( productList ); 
 // ========================== [2] 기능 로직 ======================= //
 // 1. 카테고리 출력함수 : 실행조건 : 페이지(HTML/JS) 가 열렸을때 함수실행
-categoryPint();
-function categoryPint(){                                                                
+categoryPrint();
+function categoryPrint(){                                                                
     console.log( ' >> categoryPint exe' );
     // (1). 어디에 , <select id="categoryInput">
     const categoryInput = document.querySelector('#categoryInput');                     
