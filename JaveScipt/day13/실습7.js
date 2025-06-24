@@ -73,7 +73,17 @@
 // 문제 5: 배열의 중복 요소 제거하기
 // 주어진 배열에서 중복된 요소를 제거하고, 중복 없는 새로운 배열을 만들어 출력하시오.
 // let numbers = [1, 5, 2, 3, 5, 1, 4, 2];
-// 힌트: 새로운 배열을 만들고, for 반복문으로 기존 배열을 순회하며 새로운 배열에 해당 요소가 없을( .indexOf() == -1 ) 때만 추가(push())합니다.
+// 힌트: 새로운 배열을 만들고, for 반복문으로 기존 배열을 순회하며
+//  새로운 배열에 해당 요소가 없을( .indexOf() == -1 ) 때만 추가(push())합니다.
+// let numbers = [1, 5, 2, 3, 5, 1, 4, 2];
+// let array = [];
+// for( let i = 0 ; i <= numbers.length-1 ; i++ ){
+//     let number = numbers[ i ];
+//     if( array.indexOf(number) == -1 ){
+//         array.push( number );
+//     }
+// }
+// console.log( array );
 
 
 
@@ -99,28 +109,28 @@
 // let products = ['볼펜', '노트', '지우개'];
 // let stock = [10, 5, 20];
 
-let products = [ "볼펜", "노트", "지우개" ];
-let stock = [ 10, 5, 20 ];
-let 상품명 = prompt("상품명을 입력하세요");
-let 수량 = Number(prompt("수량을 입력하세요"));
-for( let index = 0 ; index <= products.length-1 ; index++ ){
-    let product = products[ index ];
+// let products = [ "볼펜", "노트", "지우개" ];
+// let stock = [ 10, 5, 20 ];
+// let 상품명 = prompt("상품명을 입력하세요");
+// let 수량 = Number(prompt("수량을 입력하세요"));
+// for( let index = 0 ; index <= products.length-1 ; index++ ){
+//     let product = products[ index ];
 
-    if( product == 상품명 ){
-        if( stock[ index ] >= 수량 ){
-            console.log("구매 완료!");
-            stock[ index ]-= 수량;
-        }
+//     if( product == 상품명 ){
+//         if( stock[ index ] >= 수량 ){
+//             console.log("구매 완료!");
+//             stock[ index ]-= 수량;
+//         }
         
-        else{
-            console.log("재고가 부족합니다.");
-        }
-    }
+//         else{
+//             console.log("재고가 부족합니다.");
+//         }
+//     }
     
-    else{
-        console.log("존재하지 않는 상품명입니다");
-    }
-}
+//     else{
+//         console.log("존재하지 않는 상품명입니다");
+//     }
+// }
 
 // let products = [ '볼펜', '노트', '지우개'];
 // let stock = [10, 5, 20];
@@ -161,15 +171,22 @@ for( let index = 0 ; index <= products.length-1 ; index++ ){
 // 청설            ★★★★★★☆☆☆☆
 // let movieNames = ['히든페이스', '위키드', '글래디에이터2', '청설'];
 // let movieRatings = [8, 4, 7, 6];
-// for( i = 0 ; i <= movieNames.length-1 ; i++ ){
-//     let movie = movieNames[i];
-//     let rate = movieRatings[i]; // 영화 이름 찾음
-//     let star = "";
-//     for( j = 0 ; j < 10; j++ ){
-//         star += "*"
-//         console.log(star);
+// let html = "";
+// for( let i = 0 ; i <= movieNames.length-1 ; i++ ){
+//     let movieName = movieNames[ i ];
+//     let movieRating = movieRatings[ i ];
+
+//     html += `<div>${movieName}`
+
+//     for( let j = 0 ; j < movieRating ; j++ ){
+//         html += `<span>★</span>`
 //     }
+//     for( let h = 0 ; h < 10- movieRating ; h++ ){
+//         html += `<span>☆</span>`
+//     }
+//     html += `</div>`
 // }
+// document.write( html );
 
 
 
@@ -191,6 +208,8 @@ for( let index = 0 ; index <= products.length-1 ; index++ ){
 // 빈좌석 예약석   
 // 예약석 빈좌석
 // 예약석 빈좌석
+
+
 
 
 // 문제 10: 주차 요금 정산하기
@@ -217,3 +236,13 @@ for( let index = 0 ; index <= products.length-1 ; index++ ){
 // 기본 시간(30분)을 초과한 시간을 계산하고, parseInt() 함수를 사용하여 10분 단위로 버림 처리하면 추가 요금 단위를 쉽게 계산할 수 있습니다.
 // 추가 요금 단위 계산식:parseInt( (총 주차시간 - 30) / 10 )
 // 계산 예시:65분 주차 시 parseInt( (65 - 30) / 10 )는 parseInt(3.5)가 되어 결과는 3이 됩니다. 따라서 추가 요금은 3 * 500원으로 계산됩니다.
+// let carNumbers = ['210어7125', '142가7415', '888호8888', '931나8234'];
+// let usageMinutes = [65, 30, 140, 420];
+// let html = "";
+// for( let i = 0 ; i <= carNumbers.length-1 ; i++ ){
+//     let carNumber = carNumbers[ i ];
+//     let usageMinute = usageMinutes[ i ];
+//     let result = parseInt(( usageMinute - 30 )/10) * 500;
+//     html += `<div>${carNumber} : ${usageMinute}분 주차, 최종 요금 : ${result}원</div>`
+// }
+// document.write( html );

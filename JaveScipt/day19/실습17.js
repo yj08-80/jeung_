@@ -77,10 +77,8 @@ function checkStatus(){
         console.log( list1 );
         if( list1.tel == tel ){
             alert(`고객님의 대기번호는 ${list1.number}번입니다.`);
-            break;
+            return;
         }
-        if(list1.tel != tel ){
-        alert("대기 정보가 없습니다.")
     }
-    }
+    alert("대기 정보가 없습니다.")
 }
