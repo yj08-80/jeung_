@@ -13,18 +13,20 @@
     <title>키오스크팀플</title>
 </head>
 <body>
-    <div>
-        제품명 :<input type="text">
-        가격 : <input type="number"><br/><br/>
-        간단한 설명 : <textarea name="" id=""></textarea>
-        이미지 URL : <input type="file" accept="image/* ">
-        <button>제품 등록</button>
+    <div id="productInput">
+        제품명 :<input id="pnameInput" type="text">
+        가격 : <input id="ppriceInput" type="number"><br/><br/>
+        간단한 설명 : <textarea name="" id="pcontentInput"></textarea>
+        이미지 URL : <input id="pimgInput" type="file" accept="image/* ">
+        <button onclick="productAdd()" class="btnAdd">제품 등록</button>
         
     </div>
+
     <div>
-        <table>
+        <table border = "1px">
             <thead>
                 <tr>
+                    <th>제품ID</th>
                     <th>제품명</th>
                     <th>가격</th>
                     <th>간단한 설명</th>
@@ -32,8 +34,9 @@
                     <th>비고</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody class="tbody">
                 <tr>
+                    <td>1</td>
                     <td>아메리카노</td>
                     <td>1500</td>
                     <td>뉴크롭원두와 스페셜티 커피 원두를 블랜딩한 빽다방 아메리카노</td>
@@ -43,6 +46,7 @@
             </tbody>
         </table>
 
+        <script src=""></script>
         <script src="전체제품조회.js"></script>
     </div>
 </body>
