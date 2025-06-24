@@ -1,8 +1,8 @@
 
 const productArray = [
-    { no : 1 , id : 1, cname : "입고" , number : 3 , etc : "asad" , 변동날짜 : ""},
-    { no : 2 , id : 2, cname : "출고" , number : 7 , etc : "asda" },
-    { no : 3 , id : 3, cname : "입고" , number : 2 , etc : "dsad" }
+    { no : 1 , id : 1, cname : "입고" , number : 3 , etc : "asad" , 변동날짜 : "" },
+    { no : 2 , id : 2, cname : "출고" , number : 7 , etc : "asda" , 변동날짜 : "" },
+    { no : 3 , id : 3, cname : "입고" , number : 2 , etc : "dsad" , 변동날짜 : "" }
 ]
 let no = 3;
 // 재고 입고 (Inventory Inflow / Stock In)
