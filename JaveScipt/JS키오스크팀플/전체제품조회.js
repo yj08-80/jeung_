@@ -1,10 +1,4 @@
-//배열
 
-const productList = [
-    { pcode : 1 , pname : "아메리카노" , pprice : 1500 , pcontent : "뉴크롭원두와 스페셜티 커피 원두를 블랜딩한 빽다방 아메리카노" , pimg :"https://placehold.co/100x100" },
-    { pcode : 2 , pname : "바닐라라떼" , pprice : 3000 , pcontent : "바닐라시럽" , pimg : "https://placehold.co/100x100" },
-    { pcode : 3 , pname : "헤이즐넛라떼" , pprice : 3500, pcontent : "헤이즐넛시럽", pimg : "https://placehold.co/100x100" }
-]
 //상품코드 : pcode , 상품명 : pname , 가격 : pprice , 간단한설명 : pcontent , 이미지 : pimg
 
 //배열
@@ -77,7 +71,7 @@ function viewAllProduct(){
                     <td>${product.pprice}</td>
                     <td>${product.pcontent}</td>
                     <td><img src="${product.pimg}"</img></td>
-                    <td><button>삭제</button></td>
+                    <td><button onclick="DeleteProduct(${product.pcode})" class="btnDelete">삭제</button></td>
                 </tr>`
     }
     tbody.innerHTML = html;
