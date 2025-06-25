@@ -41,16 +41,16 @@
 //     }
 // }
 
-function getLocalProduct(){
-    let productList=localStorage.getItem('productList');
-    if(productList==null){
-        productList=[];
-    }else{
-        productList=JSON.parse(productList);
+function getLocalProduct() {
+    let productList = localStorage.getItem('productList');
+    if (productList == null) {
+        productList = [];
+    } else {
+        productList = JSON.parse(productList);
     }
     return productList;
 
 }
-function setLocalProduct(productList){
-    localStorage.setItem("productList",JSON.stringify(productList));
+function setLocalProduct(productList) {
+    localStorage.setItem("productList", JSON.stringify(productList));
 }

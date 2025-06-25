@@ -208,6 +208,25 @@
 // 빈좌석 예약석   
 // 예약석 빈좌석
 // 예약석 빈좌석
+ // (1) 좌석 상태 배열
+// (1) 좌석 상태 배열
+  let seatStatus = ['빈좌석', '예약석', '예약석', '빈좌석', '예약석', '빈좌석'];
+
+  // (2) 좌석 출력
+  for (let i = 0; i < seatStatus.length; i++) {
+    let seat = seatStatus[i];
+    if( seat == "빈좌석" ){
+        document.write( `<div style="color:blue; display:inline-block">${seat}</div>`)
+    }else{
+        document.write( `<div style="color:red; display:inline-block">${seat}</div>`)
+    }
+    // (4) 2개마다 줄바꿈
+    if ((i + 1) % 2 == 0) {
+      document.write('<br>');
+    }
+  }
+
+
 
 
 

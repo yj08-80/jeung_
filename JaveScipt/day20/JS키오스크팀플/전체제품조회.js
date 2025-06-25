@@ -107,6 +107,7 @@ function DeleteProduct(pcode){ console.log('---exe----')
             productList.splice(i,1);
             setLocalProduct(productList); // ===========================================================local 수정자리
             alert("제품 삭제 완료");
+            setLocalProduct();
             viewAllProduct();
             return;
         }
