@@ -353,3 +353,18 @@
             localStorage.setItem( "속성명" , JSON.stringfy( 배열변수 ) );
             localStorage.getItem( "속성명" );
         (2) 비동기통신( axios,fetch 등등 ) - 추후
+
+
+[ interval ]
+    1. 정의 : 시간적인 간격에 따른 특정함수 실행
+    2. 사용법
+        (1) setInterval ( 함수명,밀리초 ) : 특정함수를 밀리초마다 실행
+            - 밀리초 : 1/1000초
+            - 반환값 : interval 객체 반환
+                (예) let 변수명 = setInterval( 함수명,밀리초 );
+        (2) clearInterval ( interval 객체 ); : 특정 interval 중지
+
+[ 부트스트랩 ] : HTML/CSS/JS
+[ Chart.js ] : 차트(시각화) 라이브러리
+    설치(CDN) : https://cdnjs.com/
+    
