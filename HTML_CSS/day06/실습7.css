@@ -1,120 +1,145 @@
-/* =========== 공통 CSS ============ */
-*{ padding: 0px; margin: 0px; }
-*{ box-sizing: border-box; } 
-a{ 
-    text-decoration: none; 
-    color: black; 
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
 }
-li{ list-style-type: none;}
-/* =========== 헤더 CSS ============ */
-#header{ 
-    display: flex; 
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 1280px; 
-    margin:  15px auto;  
+a{
+    color: black;
+    text-decoration: none;
 }
-.top-menu{ 
-    display: flex; justify-content: flex-end;
+li{
+    list-style: none;
 }
-.main-menu{
-    display: flex; justify-content: flex-end;
-}
-.main-menu > li{ 
-    font-size: 20px;
-    font-weight: bold;
-    margin: 20px 0px 30px 100px;
-}
-/* =========== 본문 CSS ============ */
-#main-img > img{   width: 100%; }
-#main{
+#header{
     display: flex;
     justify-content: space-between;
     width: 1280px;
-    margin: 30px auto;
+    margin: 10px auto;
+    align-items: center;
 }
-.sidebar{ width: 250px; }
-.content{ 
-    display: flex; justify-content: space-between;
-    width: 1000px; 
+.header_menu{
+    display: flex;
+    flex-direction: column;
 }
-.content > .leftbox{ width: 490px; }
-.content > .rightbox{ width: 490px; }
-/* =========== (사이드바) 본문 CSS ============ */
-.sidebar > .title{
-    background-color: #0ca9a2;
-    color: white;
+.top_menu, .main_menu{
+    display: flex;
+    font-size: 15px;
+    align-items: center;
+}
+.top_menu{
+    justify-content: flex-end;
+    margin-bottom: 5px;
+}
+.main_menu{
     font-size: 20px;
-    padding: 10px;
+    padding: 10px 0px;
 }
-.sidebar > .comment{
-    line-height: 160%;
-    padding: 5px;
+.main_menu > li{
+    margin-left: 60px;
+    font-weight: bold;
 }
-.sidebar > .searchbox > .search-input{
-    width: 180px; height: 30px;
-    border-radius: 10px; 
-    padding: 1px 7px; 
+#main_img{
+    width: 100%;
 }
-.sidebar > .searchbox > .search-btn{
-    padding: 4px 10px; 
+#main{
+    display: flex;
+    width: 1280px;
+    margin: 0 auto;
 }
-.sidebar > .searchbox { margin: 10px 0px;}
-.sidebar > .sub-title{
-    border-top: solid 2px black;
-    border-bottom: solid 1px #eeeeee;
-    margin-top: 30px;
-    font-size: 18px;
-    padding: 10px;
+.sidebar{
+    width: 250px;
+    margin-right: 10px;
 }
-.sidebar > .sub-menu > li{ padding: 5px 10px; }
+.content2{
+    display: flex;
+}
+.title{
+    background-color: #0da8a1;
+    padding: 20px 10px;
+    color: white;
+    font-weight: bold;
+}
+.content{
+    padding: 10px 10px;
+}
+.searchbox{
+    padding: 15px 10px;
+    border-bottom: 2px solid black;
 
-/* =========== ( 왼쪽 내용) 본문 CSS ============ */
-.content .sub-title{ 
-    border-bottom: solid 2px black;
-    padding-bottom: 10px;
-    margin-bottom: 10px;
 }
-.content > .leftbox > .board > li{
+.search_input{
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 160px;
+    height: 30px;
+}
+.search_btn{
+    padding: 5px;
+    border: 1px solid black;
+}
+.sidebar > h4{
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px 10px;
+    border-bottom: 1px solid #eeeeee;
+}
+.sidebar > ul > li{
+    padding: 5px 10px;
+}
+.leftbox{
+    width: 500px;
+    margin-right: 10px;
+}
+.sub_title{
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 2px solid black;
+    padding: 10px 0px;
+}
+.sub_menu{
+    margin-bottom: 15px;
+}
+.board{
+    margin-bottom: 30px;
+}
+.leftbox > ul > li{
     display: flex;
     justify-content: space-between;
-    padding: 7px 0px;
+    padding: 5px 0px;
 }
-.content > .leftbox > .board {
-    margin-bottom: 50px;
-}
-/* =========== ( 오른쪽 내용) 본문 CSS ============ */
-.content > .rightbox > .product-list{
+.product_list{
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-start;
 }
-.content > .rightbox > .product-list > .product{
-    width: 240px;
-    margin-bottom: 30px;
+.product{
+    width: 200px;
+    margin-right: 40px;
+}
+.rightbox{
+    width: 500px;
 }
 
-/* =========== 푸터 CSS ============ */
+/*-------------푸터--------------*/
 #footer{
-    background-color: #05344e;
-    color: white; padding: 20px 0px;
+    background-color: #07334f;
 }
-.footer-inner{
-    width: 1280px; margin: 0 auto;
+.footer_inner{
+    width: 1280px;
+    margin: 0 auto;
+    color: white;
 }
-.footer-inner > .ftop-menu{
+.ftop_menu{
     display: flex;
-    margin-bottom: 30px;
+    justify-content: flex-start;
+    padding: 20px 10px;
 }
-.footer-inner > .ftop-menu > li{ margin-right: 40px; }
-.footer-inner > .fbottom-menu{
+.ftop_menu > li{
+    margin-right: 20px;
+}
+.fbottom_menu{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
-}
-.footer-inner > .fbottom-menu .footer-title{
-    margin-bottom: 10px;
-}
-.footer-inner > .fbottom-menu li{
-    margin: 5px 0px;
+    padding: 20px 10px;
 }

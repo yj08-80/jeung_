@@ -80,7 +80,7 @@ function ViewAllInventoryLogs(){ //console.log('----productcontent---')
 
 // 입출사유 수정 함수
 
-function modifyReason( no ){ console.log( '>>modifyReason exe'); console.log( no ) ;
+function modifyReason( no ){ console.log( '>>modifyReason exe'); console.log( nox ) ;
     for( let i=0; i<=productArray.length-1; i++){
         if( productArray[i].no == no ){
             const reason = prompt('수정 할 입출사유: '); // 수정할 값 입력
